@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:id="@+id/list_item_forecast_textview"
+   >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/List_item_icon"
+            android:adjustViewBounds="false"
+            android:src="@mipmap/ic_launcher1"
+            android:layout_weight="0"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#226699"
+                android:text="Tomorrow"
+                android:textSize="20dp"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:id="@+id/list_item_date_tomorrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#226699"
+                android:text="Clear"
+                android:textSize="14dp"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:id="@+id/list_item_forecast" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#226699"
+                android:text="90"
+                android:textSize="14dp"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:id="@+id/list_item_high" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#226699"
+                android:text="60"
+                android:textSize="14dp"
+                android:padding="@dimen/activity_horizontal_margin"
+
+                android:id="@+id/list_item_low" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
